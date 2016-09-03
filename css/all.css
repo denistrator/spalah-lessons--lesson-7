@@ -22,8 +22,8 @@ img {
   overflow: hidden;
   display: table;
   width: 100%;
-  height: 100hv;
-  table-layot: fixed;
+  height: 100vh;
+  table-layout: fixed;
 }
 
 .footer {
@@ -33,6 +33,50 @@ img {
 
 .container {
   margin: 0 auto;
+}
+
+body {
+  font-size: 16px;
+}
+
+.qq1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+}
+
+.qq2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.qq3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.qq4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.qq5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.qq6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.qq7 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.qq8 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=all.css.map */
