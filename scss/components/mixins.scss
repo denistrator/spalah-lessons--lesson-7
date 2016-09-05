@@ -2,3 +2,26 @@
   color: $color;
   opacity: $opacity;
 }
+
+%base-list-styles {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+%base-list-styles li {
+	display: inline-block;
+	font-size: initial;
+}
+
+%clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}

@@ -3,9 +3,6 @@ h1, .h1 {
 	font-size: 30px;
 	font-weight: 100;
 	color: mix($logo-gradient-start-color, $logo-gradient-end-color);
-	&.gradient {
-		display: inline-block;
-	}
 }
 
 @supports (-webkit-background-clip: text) {
@@ -67,4 +64,12 @@ p, .p {
 	&-dark {
 		color: $text-color-light;
 	}
+}
+
+.navigation__link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	color: $text-color-light;
+	text-transform: uppercase;
 }

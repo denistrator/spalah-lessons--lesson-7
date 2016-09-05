@@ -2,6 +2,10 @@ html {
 	box-sizing: border-box;
 }
 
+.html,
+.html .body,
+.html .body { height: 100%; }
+
 *,
 &:before,
 &:after {
@@ -11,11 +15,22 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 }
 
 img {
-	max-width: 100%;
+	// max-width: 100%;
+	width: 100%;
 	height: auto;
+}
+
+div[class $="logo-holder"],
+div[class $="img-holder"] {
+	font-size: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 .wrapper {
@@ -33,4 +48,8 @@ img {
 
 .container {
 	margin: 0 auto;
+}
+
+.gradient {
+	display: inline-block;
 }

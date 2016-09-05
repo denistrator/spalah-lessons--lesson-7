@@ -10,9 +10,9 @@ $logo-gradient-end-color: #4aa3cc;
 
 $accent-color: #00e0d0;
 
-$layer-cover-background-opacity: 0.85;
+$layer-cover-background-opacity: 0.85; //!
 $layer-cover-background-color: mix(#09052f, #311d5e);
-$layer-cover-background-gradient-start-color: #09052f;
-$layer-cover-background-gradient-end-color:#311d5e;
+$layer-cover-background-gradient-start-color: rgba(9,5,47,$layer-cover-background-opacity);
+$layer-cover-background-gradient-end-color: rgba(49,29,94,$layer-cover-background-opacity);;
 
 $cards-border-color: #e1e1e1;
