@@ -1,3 +1,40 @@
-.form {
+input, .input,
+textarea, .textarea {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 552px;
+	padding: 13px 20px 9px;
+	border: 1px solid;
+	background: transparent;
 	
+	&:focus::-webkit-input-placeholder { color: transparent; }
+	&:focus::-moz-input-placeholder { color: transparent; }
+}
+
+textarea, .textarea  {
+	min-height: 200px;
+}
+
+.container {
+	input, .input,
+	textarea, .textarea {
+		color: $text-color-dark;
+		border-color: $input-border-color-light;
+	}
+
+	&::-webkit-input-placeholder { @include color-opacity($text-color-dark, 0.5); }
+	&::-moz-input-placeholder { @include color-opacity($text-color-dark, 0.5); }
+	
+	&-dark {
+		input, .input,
+		textarea, .textarea {
+			color: $text-color-light;
+			border-color: $input-border-color-dark;
+		}
+
+		&::-webkit-input-placeholder { @include color-opacity($text-color-light, 0.75); }
+		&::-moz-input-placeholder { @include color-opacity($text-color-light, 0.75); }
+	}
 }
