@@ -1,3 +1,13 @@
-.btn {
-	
+button, input[type="submit"], .btn {
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	width: initial;
+	padding: 14px 14px;
+	line-height: 65%;
+	border: 1px solid;
+	border-radius: 1px;
+	text-transform: uppercase;
+	color: $accent-color;
+	background: transparent;
 }
