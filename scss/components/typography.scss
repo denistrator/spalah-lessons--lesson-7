@@ -1,0 +1,70 @@
+h1, .h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	color: mix($logo-gradient-start-color, $logo-gradient-end-color);
+	&.gradient {
+		display: inline-block;
+	}
+}
+
+@supports (-webkit-background-clip: text) {
+		h1, .h1 {
+		background: -moz-linear-gradient(left, $logo-gradient-start-color 0%, $logo-gradient-end-color 100%);
+		background: -webkit-linear-gradient(left, $logo-gradient-start-color 0%,$logo-gradient-end-color 100%);
+		background: linear-gradient(to right, $logo-gradient-start-color 0%,$logo-gradient-end-color 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$logo-gradient-start-color', endColorstr='$logo-gradient-end-color',GradientType=1 );
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+h2, .h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h3, .h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+h4, .h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h5, .h5 {
+	font-family: 'Playfair Display', serif;
+	font-size: 11px;
+	font-weight: 400;
+} /*unused*/
+
+h6, .h6 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+} /*unused*/
+
+p, .p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.container {
+	color: $text-color-dark;
+	
+	h3, .h3 {
+		color: $text-color-dark_lighter;
+	}
+	
+	&-dark {
+		color: $text-color-light;
+	}
+}
