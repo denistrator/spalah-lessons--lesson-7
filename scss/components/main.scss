@@ -46,8 +46,8 @@
 	}
 }
 
-section, .section, header, .header, main, .main, footer, .footer{
-	overflow: auto;
+div, section, .section, header, .header, main, .main, footer, .footer{
+	overflow: visible;
 }
 
 // header
@@ -97,5 +97,54 @@ section, .section, header, .header, main, .main, footer, .footer{
 
 .navigation__link {
 	display: block;
-	padding: 21px 9px;
+	padding: 14px 9px 18px;
+}
+
+// primary-slider
+
+.primary-swiper-container {
+	overflow: hidden;
+}
+
+.swiper-wrapper {
+	margin-top: 16.979%;
+	margin-bottom: 13.229%;
+}
+
+.primary-swiper__slide {
+	text-align: center;
+}
+
+.primary-swiper__separator {
+	width: 30%;
+    max-width: 50px;
+    margin-top: 2.1875%;
+	color: $accent-color;
+}
+
+.primary-swiper__text {
+	margin-top: 3.125%;
+}
+
+.primary-swiperbtn {
+	margin-top: 5.208%;
+}
+
+.primary-swiper-pagination {
+	position: relative;
+	margin-bottom: 7.291%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 3px;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border: 1px solid $pagination-bullets-border-color;
+	opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: $accent-color;
+	border-color: $accent-color;
 }
