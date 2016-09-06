@@ -58,6 +58,13 @@
 	margin-top: 0;
 }
 
+.section__text-separator {
+	width: 30%;
+    max-width: 50px;
+    margin-top: 2.1875%;
+    border-bottom: 2px solid;
+}
+
 div, section, .section, header, .header, main, .main, footer, .footer{
 	overflow: visible;
 }
@@ -128,10 +135,8 @@ div, section, .section, header, .header, main, .main, footer, .footer{
 }
 
 .primary-swiper__separator {
-	width: 30%;
-    max-width: 50px;
-    margin-top: 2.1875%;
 	color: $accent-color;
+	border-bottom-width: 1px;
 }
 
 .primary-swiper__text {
@@ -227,14 +232,8 @@ div, section, .section, header, .header, main, .main, footer, .footer{
 	margin-bottom: 14px;
 }
 
-.features__title {
-
-}
-
 .features__separator {
-	width: 50px;
-	margin-top: 16px;
-	border-bottom: 2px solid rgba(65,61,75,0.3);
+	border-color: $features__separator-color;
 }
 
 .features-list {
@@ -258,7 +257,7 @@ div, section, .section, header, .header, main, .main, footer, .footer{
 	height: 250px;
 	margin: 1px;
 	padding: 39px 10px 0;
-	box-shadow: 0 0 0px 1px rgba(235,235,235,0.5);
+	box-shadow: 0 0 0px 1px $features-list__border-color;
 	overflow: auto;
 } 
 
@@ -287,14 +286,83 @@ div, section, .section, header, .header, main, .main, footer, .footer{
 	}
 }
 
-.features-list_elem__img {
-
-} 
-
 .features-list_elem__head {
  	margin-top: 31px;
 } 
 
 .features-list_elem__desc {
 	margin-top: 21px;
+}
+
+// our-team
+
+.our-team {
+	text-align: center;	
 } 
+
+.our-team__head {
+	margin-bottom: 11px;
+}
+
+.our-team__title {
+
+}
+
+.our-team-separator {
+	border-bottom-color: $our-team-separator-color;
+}
+
+.section__text-separator {
+
+}
+
+.members-list {
+	margin-top: 47px;
+	overflow: hidden;
+}
+
+.members-list__elems-holder {
+	@extend %base-list-styles;
+	margin: 0px -10px;
+}
+
+.members-list__elem {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	margin-bottom: 1px;
+}
+
+.members-list__elem-box {
+	margin: 0 10px;
+}
+
+.members-list__img-holder {
+	position: relative;
+	padding-bottom: 229 / 220 * 100%;
+	background-color: $members-list__img-holder-bg-color;
+}
+
+.members-list__img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.members-list__text-holder {
+	border: 1px solid $members-list__text-holder-border-color;
+}
+
+.members-list__members-name {
+	margin-top: 20px;
+	margin-bottom: 9px;
+}
+
+.members-list__members-position {
+	margin-top: 9px;
+	color: $members-list__members-position-text-color;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+}

@@ -71,6 +71,10 @@ p, .p {
 	
 	&-dark {
 		color: $text-color-light;
+
+		h3, .h3 {
+			color: $text-color-light;
+		}
 	}
 }
 
