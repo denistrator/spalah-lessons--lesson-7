@@ -4,7 +4,14 @@ $( document ).ready(function() {
 	$('.our-works__hover').height($('.our-works__elem').height() + 1);
 	$('.our-works__hover-inner').height($('.our-works__elem').height() + 1);
 
-
+	$("a").click(function () {
+		$(".navigation__elem").removeClass('navigation__elem_active');
+		$(this).parent().addClass('navigation__elem_active');
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top;
+		$('html,body').animate( { scrollTop: destination }, 1000 );
+		return false;
+	});
 
 	var primary_Swiper = new Swiper('.primary-swiper-container', {
 	    speed: 400,

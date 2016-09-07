@@ -9,6 +9,8 @@ textarea, .textarea {
 	border: 1px solid;
 	background: transparent;
 	
+	transition: all .3s linear;	
+
 	&:focus::-webkit-input-placeholder { color: transparent; }
 	&:focus::-moz-input-placeholder { color: transparent; }
 }

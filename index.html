@@ -21,23 +21,34 @@
 		<div class="full-width-container full-width-container_bg-1">
 			<div class="layer-cover-background">
 				<div class="container-dark">
-					<header class="header-main">
+					<header class="header-main" id="home">
 						<div class="main-logo">
 							<div class="main-logo__img-holder">
 								<img src="images/main-logo.png" alt="tajam" class="main-logo__img">
 							</div>
 							<h1 class="main-logo__text gradient">tajam</h1>
 						</div>
+						<input type="checkbox" id="menu_button">
+						<label for="menu_button" class="hamburger_menu_btn">
+							<span class="hamburger_menu_btn__text-holder">Menu</span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-1"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-2"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-3"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-4"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-5"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-6"></span>
+							<span class="hamburger_menu_btn__cicrle hamburger_menu_btn__cicrle-7"></span>
+						</label>
 						<div class="main-navigation-holder">
 							<nav class="main-navigation">
 								<ul class="navigation__elems-holder">
-									<li class="navigation__elem"><a href="#" class="navigation__link">HOME</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">ABOUT</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">EXPERTISE</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">TEAMS</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">WORKS</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">PEOPLE SAY</a></li>
-									<li class="navigation__elem"><a href="#" class="navigation__link">CONTACT</a></li>
+									<li class="navigation__elem navigation__elem_active"><a href="#home" class="navigation__link">HOME</a></li>
+									<li class="navigation__elem"><a href="#about" class="navigation__link">ABOUT</a></li>
+									<li class="navigation__elem"><a href="#expertise" class="navigation__link">EXPERTISE</a></li>
+									<li class="navigation__elem"><a href="#teams" class="navigation__link">TEAMS</a></li>
+									<li class="navigation__elem"><a href="#works" class="navigation__link">WORKS</a></li>
+									<li class="navigation__elem"><a href="#people_say" class="navigation__link">PEOPLE SAY</a></li>
+									<li class="navigation__elem"><a href="#contact" class="navigation__link">CONTACT</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -83,7 +94,7 @@
 			</div><!-- layer-cover-background -->
 		</div><!-- full-width-container -->
 		<div class="container">
-			<section class="section our_story">
+			<section class="section our_story" id="about">
 				<div class="our_story__img-holder"><img src="images/main-logo_full.png" alt="" class="our_story__img"></div>
 				<h2 class="our_story__head">OUR STORY</h2>
 				<p class="our_story__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
@@ -107,7 +118,7 @@
 			</div><!-- layer-cover-background -->
 		</div><!-- full-width-container -->
 		<div class="container">
-			<section class="section features">
+			<section class="section features" id="expertise">
 				<h2 class="features__head">EXPERTISE</h2>
 				<h3 class="features__title">Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
 				<hr class="features__separator section__text-separator">
@@ -174,7 +185,7 @@
 		<div class="full-width-container full-width-container_bg-3">
 			<div class="layer-cover-background">
 				<div class="container-dark">
-					<section class="section our-team">
+					<section class="section our-team" id="teams">
 						<h2 class="our-team__head">MEET OUR AMAZING TEAM</h2>
 						<h3 class="our-team__title">Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
 						<hr class="our-team-separator section__text-separator">
@@ -225,7 +236,7 @@
 			</div><!-- layer-cover-background -->
 		</div><!-- full-width-container -->
 		<div class="container">
-			<section class="section our-works">
+			<section class="section our-works" id="works">
 				<h2 class="our-works__head">OUR WORKS</h2>
 				<a href="#" class="our-works__link-see-all">See All Project in dribbble</a>
 				<div class="works-list">
@@ -394,7 +405,7 @@
 		<div class="full-width-container full-width-container_bg-4">
 			<div class="layer-cover-background">
 				<div class="container-dark">
-					<section class="section people-say">
+					<section class="section people-say" id="people_say">
 						<div class="people-say-swiper-container">
 						    <div class="swiper-wrapper people-say-swiper-swiper-wrapper">
 						        <div class="swiper-slide people-say-swiper__slide">
@@ -447,13 +458,13 @@
 			</div><!-- layer-cover-background -->
 		</div><!-- full-width-container -->
 		<div class="container">
-			<section class="section main-form-and-clients">
+			<section class="section main-form-and-clients" id="contact">
 				<div class="main-form">
 					<h2 class="main-form__head">GIVE US A GOOD NEWS</h2>
 					<div class="main-form__form-holder">
 						<form action="" class="main-form__form">
 							<div class="main-form__input-holder"><input type="text" class="main-form__input" placeholder="Name"></div>
-							<div class="main-form__input-holder"><input type="text" class="main-form__input" placeholder="Email"></div>
+							<div class="main-form__input-holder"><input type="email" class="main-form__input" placeholder="Email"></div>
 							<div class="main-form__input-holder"><input type="text" class="main-form__input" placeholder="Subject"></div>
 							<div class="main-form__input-holder"><textarea class="main-form__textarea" placeholder="Your Massage"></textarea></div>
 							<div class="main-form__input-holder"><input type="submit" value="SUBMIT"></div>
@@ -576,12 +587,12 @@
 							<div class="main-footer-bottom-line">
 								<div class="main-footer-bottom-line__list-holder">
 									<ul class="main-footer-bottom-line__list">
-										<li class="main-footer-bottom-line__elem"><a href="" class="main-footer-bottom-line__link">HELP</a></li>
-										<li class="main-footer-bottom-line__elem"><a href="" class="main-footer-bottom-line__link">TERMS &amp; CONDITION</a></li>
-										<li class="main-footer-bottom-line__elem"><a href="" class="main-footer-bottom-line__link">PRIVACY</a></li>
+										<li class="main-footer-bottom-line__elem"><a href="#" class="main-footer-bottom-line__link">HELP</a></li>
+										<li class="main-footer-bottom-line__elem"><a href="#" class="main-footer-bottom-line__link">TERMS &amp; CONDITION</a></li>
+										<li class="main-footer-bottom-line__elem"><a href="#" class="main-footer-bottom-line__link">PRIVACY</a></li>
 									</ul>
 								</div><!-- main-footer-bottom-line__list-holder -->
-								<p class="main-footer-bottom-line__copyright">Copyright &copy; 2015 - <a href="" class="main-footer-bottom-line__copyright-link">Tajem Creative</a></p>
+								<p class="main-footer-bottom-line__copyright">Copyright &copy; 2015 - <a href="#" class="main-footer-bottom-line__copyright-link">Tajem Creative</a></p>
 							</div><!-- main-footer-bottom-line -->
 						</section><!-- section -->
 					</div><!-- container-dark -->
