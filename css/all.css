@@ -1,21 +1,21 @@
-.navigation__elems-holder, .features-list__elems-holder, .members-list__elems-holder {
+.navigation__elems-holder, .features-list__elems-holder, .members-list__elems-holder, .our-works__elems-holder {
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none;
 }
 
-.navigation__elems-holder li, .features-list__elems-holder li, .members-list__elems-holder li {
+.navigation__elems-holder li, .features-list__elems-holder li, .members-list__elems-holder li, .our-works__elems-holder li {
   display: inline-block;
   font-size: initial;
 }
 
-.header-main:before, .main-logo:before, .our_story:before, .header-main:after, .main-logo:after, .our_story:after {
+.header-main:before, .main-logo:before, .our_story:before, .our-works:before, .header-main:after, .main-logo:after, .our_story:after, .our-works:after {
   content: '';
   display: table;
 }
 
-.header-main:after, .main-logo:after, .our_story:after {
+.header-main:after, .main-logo:after, .our_story:after, .our-works:after {
   clear: both;
 }
 
@@ -148,6 +148,12 @@ p, .p {
   line-height: 24px;
 }
 
+a, .a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .container, .container-dark {
   color: #413d4b;
 }
@@ -175,6 +181,35 @@ p, .p {
 .features-list_elem__desc {
   color: #333;
   line-height: 22px;
+}
+
+.our-works__link-see-all {
+  color: #413d4b;
+}
+
+.people-say__quotes-quote {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.people-say__quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.people-say__mans-position {
+  margin-top: 1.14583%;
+  margin-bottom: 0.83333%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 input, .input,
@@ -365,7 +400,7 @@ div, section, .section, header, .header, main, .main, footer, .footer {
   overflow: hidden;
 }
 
-.swiper-wrapper {
+.primary-swiper-wrapper {
   margin-top: 16.979%;
   margin-bottom: 13.229%;
 }
@@ -383,7 +418,7 @@ div, section, .section, header, .header, main, .main, footer, .footer {
   margin-top: 3.125%;
 }
 
-.primary-swiperbtn {
+.primary-swiper__btn {
   margin-top: 5.208%;
 }
 
@@ -392,7 +427,7 @@ div, section, .section, header, .header, main, .main, footer, .footer {
   margin-bottom: 7.291%;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 3px;
   width: 10px;
   height: 10px;
@@ -401,7 +436,7 @@ div, section, .section, header, .header, main, .main, footer, .footer {
   opacity: 1;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #00e0d0;
   border-color: #00e0d0;
 }
@@ -588,6 +623,181 @@ div, section, .section, header, .header, main, .main, footer, .footer {
   font-family: Roboto;
   font-size: 13px;
   font-weight: 300;
+}
+
+.our-team__join-us-text {
+  margin-top: 7.29167%;
+}
+
+.our-team__join-us-btn {
+  margin-top: 1.97917%;
+}
+
+.our-works {
+  text-align: center;
+}
+
+.our-works__head {
+  float: left;
+}
+
+.our-works__link-see-all {
+  float: right;
+}
+
+.our-works__link-see-all:after {
+  content: '';
+  position: relative;
+  top: 2px;
+  left: 0;
+  display: block;
+  float: right;
+  width: 8px;
+  margin-left: 10px;
+  height: 13px;
+  opacity: 0.7;
+  background-image: url("../images/see-all-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.works-list {
+  clear: both;
+}
+
+.our-works__elem {
+  display: inline-block;
+  width: 16.66667%;
+}
+
+.our-works__elem:nth-child(odd) .our-works__box {
+  background-color: #acacac;
+}
+
+.our-works__elem:nth-child(even) .our-works__box {
+  background-color: #8a8a8a;
+}
+
+.our-works__elem:hover .our-works__hover {
+  opacity: 1;
+}
+
+.our-works__box {
+  padding-bottom: 74.90637%;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-works__img-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: calc(100% + 1px);
+  overflow: hidden;
+  display: table;
+}
+
+.our-works__img-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.our-works__img {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.our-works__img[src=""] {
+  opacity: 0;
+}
+
+.our-works__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: calc(100% + 1px);
+  overflow: hidden;
+  display: table;
+  opacity: 0;
+}
+
+.our-works__hover-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.our-works__btn-load-more {
+  margin-top: 70px;
+}
+
+.people-say {
+  text-align: center;
+}
+
+.people-say-swiper-container {
+  position: relative;
+}
+
+.people-say-swiper-swiper-wrapper {
+  padding-bottom: 70px;
+}
+
+.people-say__quotes-quote {
+  margin-top: 2.1875%;
+  margin-bottom: 2.29167%;
+}
+
+.people-say__mans-name {
+  margin-top: 5%;
+}
+
+.people-say__mans-position {
+  margin-top: 1.14583%;
+  margin-bottom: 4.6875%;
+}
+
+.people-say-swiper-button-prev, .people-say-swiper-button-next {
+  width: 11px;
+  height: 21px;
+  top: 100%;
+  top: calc(100% - 35px);
+  margin-top: -10.5px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.people-say-swiper-button-prev {
+  left: 50%;
+  margin-left: -190px;
+  background-image: url("../images/pagination-arrow-back.png");
+}
+
+.people-say-swiper-button-next {
+  right: 50%;
+  margin-right: -190px;
+  background-image: url("../images/pagination-arrow-forward.png");
+}
+
+.people-say-swiper-pagination.swiper-pagination-bullets {
+  top: 100%;
+  top: calc(100% - 57.5px);
+  font-size: 0;
+}
+
+.people-say-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 45px;
+  height: 45px;
+  margin: 0 7px;
+  border: none;
+}
+
+.people-say-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  margin: 0 19px;
 }
 
 /*# sourceMappingURL=all.css.map */
