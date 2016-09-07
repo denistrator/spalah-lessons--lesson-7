@@ -1,21 +1,21 @@
-.navigation__elems-holder, .features-list__elems-holder, .members-list__elems-holder, .our-works__elems-holder {
+.navigation__elems-holder, .features-list__elems-holder, .members-list__elems-holder, .our-works__elems-holder, .clients__list, .main-footer-box-socials__socials-list, .main-footer-bottom-line__list {
   margin: 0;
   padding: 0;
   font-size: 0;
   list-style: none;
 }
 
-.navigation__elems-holder li, .features-list__elems-holder li, .members-list__elems-holder li, .our-works__elems-holder li {
+.navigation__elems-holder li, .features-list__elems-holder li, .members-list__elems-holder li, .our-works__elems-holder li, .clients__list li, .main-footer-box-socials__socials-list li, .main-footer-bottom-line__list li {
   display: inline-block;
   font-size: initial;
 }
 
-.header-main:before, .main-logo:before, .our_story:before, .our-works:before, .header-main:after, .main-logo:after, .our_story:after, .our-works:after {
+.header-main:before, .main-logo:before, .our_story:before, .our-works:before, .main-form-and-clients:before, .clients:before, .main-footer-box-socials__subscribe-form:before, .main-footer-bottom-line:before, .header-main:after, .main-logo:after, .our_story:after, .our-works:after, .main-form-and-clients:after, .clients:after, .main-footer-box-socials__subscribe-form:after, .main-footer-bottom-line:after {
   content: '';
   display: table;
 }
 
-.header-main:after, .main-logo:after, .our_story:after, .our-works:after {
+.header-main:after, .main-logo:after, .our_story:after, .our-works:after, .main-form-and-clients:after, .clients:after, .main-footer-box-socials__subscribe-form:after, .main-footer-bottom-line:after {
   clear: both;
 }
 
@@ -210,6 +210,10 @@ a, .a {
   font-weight: 300;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer-box__p {
+  line-height: 26px;
 }
 
 input, .input,
@@ -798,6 +802,141 @@ div, section, .section, header, .header, main, .main, footer, .footer {
       -ms-transform: scale(1.5);
           transform: scale(1.5);
   margin: 0 19px;
+}
+
+.main-form {
+  width: 50%;
+  float: left;
+}
+
+.main-form__form-holder {
+  margin-top: 7.29167%;
+}
+
+.main-form__input-holder {
+  margin-top: 4.58333%;
+}
+
+.main-form__input {
+  width: 100%;
+}
+
+.clients {
+  width: 50%;
+  float: right;
+  padding-left: 10.41667%;
+}
+
+.lients__list-holder {
+  overflow: hidden;
+}
+
+.clients__list {
+  clear: both;
+  margin: 0 -10.41667%;
+  margin-top: 5%;
+}
+
+.clients__elem {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.clients__link {
+  display: block;
+  padding: 9.79167% 14.58333%;
+}
+
+.main-footer {
+  font-size: 0;
+}
+
+.main-footer-boxes-holder {
+  overflow: hidden;
+  margin: 0 -1.6%;
+}
+
+.main-footer-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.3%;
+  min-width: 180px;
+  padding: 0 1.6%;
+  font-size: initial;
+}
+
+.main-footer-box-with-logo__logo-box {
+  float: none;
+}
+
+.main-footer-box-with-logo__text {
+  margin-top: 24px;
+}
+
+.main-footer-box-contacts-wrapper {
+  padding-left: 20px;
+}
+
+.main-footer-box-contacts__contacts {
+  margin-top: 38px;
+  font-style: normal;
+}
+
+.main-footer-box-contacts__contacts_tel {
+  color: white;
+}
+
+.main-footer-box-socials__subscribe-form-holder {
+  margin-top: 38px;
+}
+
+.main-footer-box-socials__input {
+  height: 45px;
+}
+
+.main-footer-box-socials__input-text-holder {
+  width: 100%;
+  float: left;
+  margin-right: -70px;
+  padding-right: 80px;
+}
+
+.main-footer-box-socials__input-btn.main-footer-box-socials__input-btn {
+  font-size: 0;
+  width: 70px;
+  float: right;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url("../images/send-btn.png");
+}
+
+.main-footer-bottom-line {
+  margin-top: 6.97917%;
+}
+
+.main-footer-bottom-line__list-holder {
+  float: left;
+}
+
+.main-footer-bottom-line__list {
+  font-size: initial;
+}
+
+.main-footer-bottom-line__link {
+  padding: 0 16px;
+  color: white;
+}
+
+.main-footer-bottom-line__copyright {
+  margin: 0;
+  float: right;
+}
+
+.main-footer-bottom-line__copyright-link {
+  color: white;
 }
 
 /*# sourceMappingURL=all.css.map */
