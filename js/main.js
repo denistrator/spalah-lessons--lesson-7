@@ -16,7 +16,7 @@ $( document ).ready(function() {
 	var primary_Swiper = new Swiper('.primary-swiper-container', {
 	    speed: 400,
 	    spaceBetween: 450,
-	    // autoplay: 3500,
+	    autoplay: 3500,
 
 	    pagination: '.primary-swiper-pagination',
 	    paginationClickable: true
@@ -25,7 +25,7 @@ $( document ).ready(function() {
 	var primary_Swiper = new Swiper('.people-say-swiper-container', {
 	    speed: 400,
 	    spaceBetween: 450,
-	    // autoplay: 3500,
+	    autoplay: 3500,
 
 	    nextButton: '.people-say-swiper-button-next',
 	    prevButton: '.people-say-swiper-button-prev',
