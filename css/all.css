@@ -654,6 +654,7 @@ a:hover {
 }
 
 .video-box__play-arrow {
+  display: block;
   width: 100%;
   height: 100%;
   background-image: url("../images/play-video.png");
@@ -1114,16 +1115,92 @@ a:hover {
   background-position: 50%;
 }
 
+.main-footer-box-socials__socials-list-holder {
+  margin-top: 27px;
+}
+
+.main-footer-box-socials__socials-list-elem {
+  margin-right: 8px;
+}
+
+.main-footer-box-socials__socials-list-elem:last-child {
+  margin-right: 0;
+}
+
+.main-footer-box-socials__socials-link {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.main-footer-box-socials__socials-link:hover {
+  border-color: #00e0d0;
+}
+
+.main-footer-box-socials__socials-link_facebook {
+  background-image: url("../images/socials/facebook.png");
+}
+
+.main-footer-box-socials__socials-link_twitter {
+  background-image: url("../images/socials/twitter.png");
+}
+
+.main-footer-box-socials__socials-link_dribbble {
+  background-image: url("../images/socials/dribbble.png");
+}
+
+.main-footer-box-socials__socials-link_instagram {
+  background-image: url("../images/socials/instagram.png");
+}
+
+.main-footer-box-socials__socials-link_google {
+  background-image: url("../images/socials/google.png");
+}
+
+.main-footer-box-socials__socials-link_youtube {
+  background-image: url("../images/socials/youtube.png");
+}
+
+.main-footer-box-socials__socials-link_facebook:hover {
+  background-image: url("../images/socials/facebook_active.png");
+}
+
+.main-footer-box-socials__socials-link_twitter:hover {
+  background-image: url("../images/socials/twitter_active.png");
+}
+
+.main-footer-box-socials__socials-link_dribbble:hover {
+  background-image: url("../images/socials/dribbble_active.png");
+}
+
+.main-footer-box-socials__socials-link_instagram:hover {
+  background-image: url("../images/socials/instagram_active.png");
+}
+
+.main-footer-box-socials__socials-link_google:hover {
+  background-image: url("../images/socials/google_active.png");
+}
+
+.main-footer-box-socials__socials-link_youtube:hover {
+  background-image: url("../images/socials/youtube_active.png");
+}
+
 .main-footer-bottom-line {
   margin-top: 6.97917%;
 }
 
 .main-footer-bottom-line__list-holder {
   float: left;
+  overflow: hidden;
 }
 
 .main-footer-bottom-line__list {
   font-size: initial;
+  margin: 0 -16px;
 }
 
 .main-footer-bottom-line__link {

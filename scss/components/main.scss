@@ -379,6 +379,7 @@ a {
 }
 
 .video-box__play-arrow {
+	display: block;
 	width: 100%;
 	height: 100%;
 	background-image: url("../images/play-video.png");
@@ -891,12 +892,86 @@ a {
 		background-position: 50%;
 	}
 }
-.main-footer-box-socials__socials-list-holder {} 
+
+.main-footer-box-socials__socials-list-holder {
+	margin-top: 27px;
+}
+
 .main-footer-box-socials__socials-list {
 	@extend %base-list-styles;
 } 
-.main-footer-box-socials__socials-list-elem {} 
-.main-footer-box-socials__socials-link {} 
+
+.main-footer-box-socials__socials-list-elem {
+	margin-right: 8px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.main-footer-box-socials__socials-link {
+	width: 35px;
+	height: 35px;
+	display: block;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	
+	&:hover {
+		border-color: $accent-color;
+	}
+
+	&_facebook {
+		background-image: url("../images/socials/facebook.png");
+	}
+
+	&_twitter {
+		background-image: url("../images/socials/twitter.png");
+	}
+
+	&_dribbble {
+		background-image: url("../images/socials/dribbble.png");
+	}
+
+	&_instagram {
+		background-image: url("../images/socials/instagram.png");
+	}
+
+	&_google {
+		background-image: url("../images/socials/google.png");
+	}
+
+	&_youtube {
+		background-image: url("../images/socials/youtube.png");
+	}
+
+	//
+
+	&_facebook:hover {
+		background-image: url("../images/socials/facebook_active.png");
+	}
+
+	&_twitter:hover {
+		background-image: url("../images/socials/twitter_active.png");
+	}
+
+	&_dribbble:hover {
+		background-image: url("../images/socials/dribbble_active.png");
+	}
+
+	&_instagram:hover {
+		background-image: url("../images/socials/instagram_active.png");
+	}
+
+	&_google:hover {
+		background-image: url("../images/socials/google_active.png");
+	}
+
+	&_youtube:hover {
+		background-image: url("../images/socials/youtube_active.png");
+	}
+}
 
 .main-footer-bottom-line {
 	@extend %clearfix;
@@ -904,10 +979,12 @@ a {
 } 
 .main-footer-bottom-line__list-holder {
 	float: left;
+	overflow: hidden;
 } 
 .main-footer-bottom-line__list {
 	@extend %base-list-styles;
 	font-size: initial;
+	margin: 0 -16px;
 } 
 .main-footer-bottom-line__elem {
 
